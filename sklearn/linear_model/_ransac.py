@@ -427,6 +427,9 @@ class RANSACRegressor(MetaEstimatorMixin, RegressorMixin,
 
         # if none of the iterations met the required criteria
         if inlier_mask_best is None:
+            # MY MODIFICATION STARTS
+            return None
+            # MY MODIFICATION ENDS
             if ((self.n_skips_no_inliers_ + self.n_skips_invalid_data_ +
                     self.n_skips_invalid_model_) > self.max_skips):
                 raise ValueError(
