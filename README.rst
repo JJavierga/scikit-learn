@@ -49,6 +49,8 @@ It is currently maintained by a team of volunteers.
 
 Website: https://scikit-learn.org
 
+ *** THE FILE sklearn/linear_model/_ransac HAS BEEN MODIFIED TO AVOID RAISE ERROR max_trials ***
+
 Installation
 ------------
 
